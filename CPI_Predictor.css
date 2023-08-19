@@ -14,7 +14,11 @@
     padding-left: 1em;
     padding-right: 1em;
 }
-
+body{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 input{
     width: 50px;
 }
@@ -102,4 +106,14 @@ button{
     margin-right:10px;
     font-size: large;
     font-weight: bold;
+}
+
+/*responsive*/
+
+@media (width<500px) {
+
+    body{
+        width:90%;
+    }
+    
 }
