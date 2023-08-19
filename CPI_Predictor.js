@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let total_gradepoints = parseFloat(earned_gradepoints) + parseFloat(prev_gradepts);
             let new_cpi = (parseFloat(total_gradepoints) / parseFloat(credits));
 
-            document.getElementById("ans_header").innerHTML ="Your CPI after the this Semeseter : " + new_cpi.toFixed(2); 
+            document.querySelector("#ans_header").innerHTML ="Your CPI after this Semeseter : " + new_cpi.toFixed(2);
+            document.getElementById("ans_header").style.display="block";
         }
     }
 
