@@ -11,7 +11,7 @@
     <body>
         <script src="CPI_Predictor.js"></script>
     
-        <h1>CPI Predictor</h1>
+        <h1 id="heading">CPI Predictor</h1>
         <section id="cpi_credits">
             <div id="cpi_div"><label id="for_cpi" for ="cpi">Current CPI : <input id="cpi" type="number"></label></div>
             <div id="credits_div"><label id="for_tcredits" for = "total-credits"> Total Credits Earned Till Now : <input type="number" id="total-credits"></label></div>
@@ -45,14 +45,15 @@
                     <input type="number" id="ptrs5" class="ptrs" required>
                     
             </section>
-            <button id="add-course">+ Add Course</button>
-            <button id="remove-course">- Remove Course</button>
+            <button id="add-course"><span id="plus">+</span>Add Course</button>
+            <button id="remove-course"><span id="minus">-</span>Remove Course</button>
 
             <button id="calculate">Calculate</button>
         </section>
-
-        <div id="ans">
-            <h1 id="ans_header"></h1>
-        </div>
+        <div>
+        <h1 class="answer" id="ans_header"></h1>
+    </div>
     </body>
+   
+
 </html>
