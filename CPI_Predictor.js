@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let total_credits = document.getElementById("total-credits").value;
 
-        if(total_credits =="" || total_credits < 0 )
-        {
+        if(total_credits =="" || total_credits < 0 ){
+            console.log({total_credits});
             alert("Please Enter Valid Total Credtis");
         }
 
         let ptrs_class = document.getElementsByClassName("ptrs");
-        
+        if(cpi_vf == "" || cpi_vf > 10 || cpi_vf < 0)
         let credits_class = document.getElementsByClassName("credits");
         for(let element of credits_class)
         {
