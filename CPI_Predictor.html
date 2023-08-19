@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CPI Predictor</title>
+        <link rel="stylesheet" href="CPI_Predictor.css" />
+    </head>
+
+    <body>
+        <script src="CPI_Predictor.js"></script>
+    
+        <h1>CPI Predictor</h1>
+        <section id="cpi_credits">
+            <div id="cpi_div"><label id="for_cpi" for ="cpi">Current CPI : <input id="cpi" type="number"></label></div>
+            <div id="credits_div"><label id="for_tcredits" for = "total-credits"> Total Credits Earned Till Now : <input type="number" id="total-credits"></label></div>
+        </section>
+        <section id="courses">
+            <h2>Courses</h2>
+            <section class="css-grid" id="css-grid">
+
+                    <h3>Course No</h3>
+                    <h3>Credits</h3>
+                    <h3>Predicted Pointers</h3>
+              
+                    <label for = "credits1">Course1</label>
+                    <input type="number" id="credits1" class="credits" required>
+                    <input type="number" id="ptrs1" class="ptrs" required>
+                    
+                    <label for = "credits2">Course2</label>
+                    <input type="number" id="credits2" class="credits" required>
+                    <input type="number" id="ptrs2" class="ptrs" required>
+
+                    <label for = "credits3">Course3</label>
+                    <input type="number" id="credits3" class="credits" required>
+                    <input type="number" id="ptrs3" class="ptrs" required>
+
+                    <label for = "credits4">Course4</label>
+                    <input type="number" id="credits4" class="credits" required>
+                    <input type="number" id="ptrs4" class="ptrs" required>
+                    
+                    <label for = "credits5">Course5</label>
+                    <input type="number" id="credits5" class="credits" required>
+                    <input type="number" id="ptrs5" class="ptrs" required>
+                    
+            </section>
+            <button id="add-course">+ Add Course</button>
+            <button id="remove-course">- Remove Course</button>
+
+            <button id="calculate">Calculate</button>
+        </section>
+
+        <div id="ans">
+            <h1 id="ans_header"></h1>
+        </div>
+    </body>
+</html>
